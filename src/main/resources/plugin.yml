@@ -1,0 +1,14 @@
+name: RWBot
+version: '${version}'
+main: rw.bot.RWBotPlugin
+api-version: '1.21'
+description: Fake player bot that keeps the server alive 24/7
+commands:
+  rwbotspawn:
+    description: Spawn, list or clear RW bots
+    usage: /rwbotspawn <name|list|clear [name]>
+    permission: rwbot.admin
+permissions:
+  rwbot.admin:
+    description: Use /rwbotspawn
+    default: op
